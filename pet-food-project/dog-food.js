@@ -24,9 +24,8 @@ function buildDogFood(dogFoodData) {
   var volumes;
 
   var dogFood = dogFoodData.dog_brands[currentDogFood];
-  var brand = dogFood.name;
   dogFoodOutput += "<div class='dogFoodCard'>"
-  dogFoodOutput += "<div>" + "Brand: " + brand + "</div>";
+  dogFoodOutput += "<div>" + "Brand: " + dogFood.name + "</div>";
 
     for (var i = 0; i < dogFood.types.length; i++) {
       volumes = dogFood.types[i].volumes;

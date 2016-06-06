@@ -4,7 +4,8 @@
       "name": "Purrina",
       "breeds": [
         {
-          "Siamese": [
+          "breed": "Siamese",
+          "types": [
             {
               "type": "kitten",
               "volumes": [
@@ -38,7 +39,8 @@
           ]
         },
         {
-          "Bengal": [
+          "breed": "Bengal",
+          "types": [
             {
               "type": "kitten",
               "volumes": [
@@ -72,7 +74,8 @@
           ]
         },
         {
-          "Snowshoe": [
+          "breed": "Snowshoe",
+          "types": [
             {
               "type": "kitten",
               "volumes": [
@@ -106,7 +109,8 @@
           ]
         },
         {
-          "Munchkin": [
+          "breed": "Munchkin",
+          "types": [
             {
               "type": "kitten",
               "volumes": [
@@ -145,7 +149,8 @@
       "name": "Meow Meal",
       "breeds": [
         {
-          "Manx": [
+          "breed": "Manx",
+          "types": [
             {
               "type": "kitten",
               "volumes": [
@@ -175,7 +180,8 @@
           ]
         },
         {
-          "Egyptian Mau": [
+          "breed": "Egyptian Mau",
+          "types": [
             {
               "type": "kitten",
               "volumes": [
@@ -205,7 +211,8 @@
           ]
         },
         {
-          "Himalayan": [
+          "breed": "Himalayan",
+          "types": [
             {
               "type": "kitten",
               "volumes": [
@@ -235,7 +242,8 @@
           ]
         },
         {
-          "Rag Doll": [
+          "breed": "Rag Doll",
+          "types": [
             {
               "type": "kitten",
               "volumes": [
