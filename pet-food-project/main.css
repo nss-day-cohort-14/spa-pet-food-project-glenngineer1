@@ -1,0 +1,36 @@
+.dogFoodCard {
+  border: 2px solid black;
+  display: inline-block;
+  width: 30%;
+  text-align: center;
+  margin: 5px;
+}
+
+.dog-style {
+  background-color: #D49FA9;
+}
+
+.dog-brand {
+  background-color: #B4B83E;
+}
+
+.catFoodCard {
+  border: 2px solid blue;
+  display: inline-block;
+  width: 30%;
+  text-align: center;
+  margin: 5px;
+  float: left;
+}
+
+.cat-brand {
+  background-color: #3E9ACF;
+}
+
+.cat-breed {
+  background-color: #EB7EFF;
+}
+
+.cat-style {
+  background-color: #9FA23A;
+}
