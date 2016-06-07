@@ -13,33 +13,28 @@ function errorMessage() {
 
 function dogData() {
   var dogInfo = JSON.parse(this.responseText);
-  buildDogFood(dogInfo)
-}
 
-function buildDogFood(dogFoodData) {
   var dogFoodtoDom = document.getElementById("dog-food-data");
 
-  for (currentDogFood in dogFoodData.dog_brands) {
+  for (currentDogFood in dogInfo.dog_brands) {
   var dogFoodOutput = "";
   var volumes;
 
-  var dogFood = dogFoodData.dog_brands[currentDogFood];
+  var dog = dogInfo.dog_brands[currentDogFood];
   dogFoodOutput += "<div class='dogFoodCard'>"
-  dogFoodOutput += "<div>" + "Brand: " + dogFood.name + "</div>";
+  dogFoodOutput += "<p class='dog-brand'>" + "Brand: " + dog.name + "</p>";
 
-    for (var i = 0; i < dogFood.types.length; i++) {
-      volumes = dogFood.types[i].volumes;
-      dogFoodOutput += "<div>" + "Type: " + dogFood.types[i].type + "</div>";
-    }
+    for (var i = 0; i < dog.types.length; i++) {
+      volumes = dog.types[i].volumes;
+      dogFoodOutput += "<p class='dog-style'>" + "Style: " + dog.types[i].type + "</p>";
 
-    for (var j = 0; j < volumes.length; j++) {
-      var size = volumes[j].name;
-      var price = volumes[j].price;
-      dogFoodOutput += "<div>" + "Size: " + size + " " + price + "</div>"
+      for (var j = 0; j < volumes.length; j++) {
+        var size = volumes[j].name;
+        var price = volumes[j].price;
+        dogFoodOutput += "<p>" + "Size: " + size + " Price: " + price + "</p>";
+      }
     }
     dogFoodOutput += "</div>";
-
-  dogFoodtoDom.innerHTML += dogFoodOutput;
-
+    dogFoodtoDom.innerHTML += dogFoodOutput;
   }
 }

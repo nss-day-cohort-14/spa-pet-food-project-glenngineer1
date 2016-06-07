@@ -26,28 +26,26 @@ function buildCatInfo(catFoodData) {
 
     var catFood = catFoodData.cat_brands[currentCatFood];
     catFoodOutput += "<div class='catFoodCard'>";
-    catFoodOutput += "<div>" + "Brand: " + catFood.name + "</div>";
+    catFoodOutput += "<p class='cat-brand'>" + "Brand: " + catFood.name + "</p>";
 
     for (var i = 0; i < catFood.breeds.length; i++) {
       types = catFood.breeds[i].types;
-      catFoodOutput += "<div>" + "Breed: " + catFood.breeds[i].breed + "</div>";
-    }
+      catFoodOutput += "<p class='cat-breed'>" + "Breed: " + catFood.breeds[i].breed + "</p>";
 
-    for (var j = 0; j < types.length; j++) {
-      volumes = types[j].volumes;
-      catFoodOutput += "<div>" + types[j].type + "</div>";
-    }
+      for (var j = 0; j < types.length; j++) {
+        volumes = types[j].volumes;
+        catFoodOutput += "<p class='cat-style'>" + "Style: " + types[j].type + "</p>";
 
-    for (var k = 0; k < volumes.length; k++) {
-      var size = volumes[k].name;
-      var price = volumes[k].price;
-      catFoodOutput += "<div>" + "Size: " + size + " " + "Price: " + price + "</div>";
+        for (var k = 0; k < volumes.length; k++) {
+          var size = volumes[k].name;
+          var price = volumes[k].price;
+          catFoodOutput += "<p>" + "Size: " + size + " " + "Price: " + price + "</p>";
+        }
+      }
     }
-
+    catFoodOutput += "</div>"
     catFoodToDom.innerHTML += catFoodOutput;
   }
-  catFoodOutput += "</div>"
-
 }
 
 
